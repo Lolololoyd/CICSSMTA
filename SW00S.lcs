@@ -1,0 +1,78 @@
+CA-Realia CICS Ver:6.0.27  sw00s.bms                                                                     07NOV23 19:24:59 PAGE  1
+
+    1          PRINT NOGEN
+    2 SW00S   DFHMSD TYPE=&SYSPARM,MODE=INOUT,LANG=COBOL,STORAGE=AUTO,       C
+    3                CTRL=(FREEKB,FRSET),TIOAPFX=YES,EXTATT=NO,              C
+    4                MAPATTS=(COLOR,HILIGHT)
+    5 SW00M    DFHMDI SIZE=(35,80)
+    6          DFHMDF POS=(01,01),LENGTH=06,ATTRB=(ASKIP,NORM),              C
+    7                INITIAL='SM00'
+    8          DFHMDF POS=(01,32),LENGTH=18,ATTRB=(ASKIP,NORM),              C
+    9                INITIAL='SERVICE MANAGEMENT'
+   10          DFHMDF POS=(02,37),LENGTH=09,ATTRB=(ASKIP,NORM),              C
+   11                INITIAL='MAIN MENU'
+   12          DFHMDF POS=(05,33),LENGTH=17,ATTRB=(ASKIP,NORM),              C
+   13                INITIAL='1 - SEARCH TICKET'
+   14          DFHMDF POS=(07,33),LENGTH=17,ATTRB=(ASKIP,NORM),              C
+   15                INITIAL='2 - SUBMIT TICKET'
+   16          DFHMDF POS=(09,33),LENGTH=17,ATTRB=(ASKIP,NORM),              C
+   17                INITIAL='3 - UPDATE TICKET'
+   18          DFHMDF POS=(11,33),LENGTH=16,ATTRB=(ASKIP,NORM),              C
+   19                INITIAL='4 - CLOSE TICKET'
+   20          DFHMDF POS=(13,33),LENGTH=18,ATTRB=(ASKIP,NORM),              C
+   21                INITIAL='5 - APPROVE TICKET'
+   22          DFHMDF POS=(15,33),LENGTH=17,ATTRB=(ASKIP,NORM),              C
+   23                INITIAL='6 - CANCEL TICKET'
+   24          DFHMDF POS=(17,33),LENGTH=20,ATTRB=(ASKIP,NORM),              C
+   25                INITIAL='7 - USER MAINTENANCE'
+   26          DFHMDF POS=(19,33),LENGTH=15,ATTRB=(ASKIP,NORM),              C
+   27                INITIAL='ENTER OPTION : '
+   28          DFHMDF POS=(20,33),LENGTH=15,ATTRB=(ASKIP,NORM),              C
+   29                INITIAL='ENTER TICKET : '
+   30          DFHMDF POS=(23,13),LENGTH=10,ATTRB=(ASKIP,NORM),              C
+   31                INITIAL='PF3 - EXIT'
+   32 OPTION   DFHMDF POS=(19,49),LENGTH=01,ATTRB=(UNPROT,NORM,IC,FSET),     C
+   33                INITIAL=' '
+   34 TICKET   DFHMDF POS=(20,49),LENGTH=06,ATTRB=(UNPROT,NORM,IC,FSET),     C
+   35                INITIAL=' '
+   36          DFHMDF POS=(19,51),LENGTH=01,ATTRB=(ASKIP,NORM)
+   37          DFHMDF POS=(20,57),LENGTH=01,ATTRB=(ASKIP,NORM)
+   38 ERRMSG   DFHMDF POS=(22,01),LENGTH=71,ATTRB=(ASKIP,NORM,IC,FSET)
+   39 DATE     DFHMDF POS=(01,70),LENGTH=10,ATTRB=(ASKIP,NORM,IC,FSET)
+   40 TIME     DFHMDF POS=(02,70),LENGTH=08,ATTRB=(ASKIP,NORM,IC,FSET)
+   41 SW00L    DFHMDI SIZE=(35,80)
+   42          DFHMDF POS=(01,01),LENGTH=06,ATTRB=(ASKIP,NORM),              C
+   43                INITIAL='SM00'
+   44          DFHMDF POS=(01,32),LENGTH=18,ATTRB=(ASKIP,NORM),              C
+   45                INITIAL='SERVICE MANAGEMENT'
+   46          DFHMDF POS=(02,37),LENGTH=09,ATTRB=(ASKIP,NORM),              C
+   47                INITIAL='MAIN MENU'
+   48          DFHMDF POS=(05,33),LENGTH=17,ATTRB=(ASKIP,NORM),              C
+   49                INITIAL='1 - SEARCH TICKET'
+   50          DFHMDF POS=(07,33),LENGTH=17,ATTRB=(ASKIP,NORM),              C
+   51                INITIAL='2 - UPDATE TICKET'
+   52          DFHMDF POS=(09,33),LENGTH=15,ATTRB=(ASKIP,NORM),              C
+   53                INITIAL='ENTER OPTION : '
+   54          DFHMDF POS=(11,33),LENGTH=15,ATTRB=(ASKIP,NORM),              C
+   55                INITIAL='ENTER TICKET : '
+   56          DFHMDF POS=(15,13),LENGTH=10,ATTRB=(ASKIP,NORM),              C
+   57                INITIAL='PF3 - EXIT'
+   58 OPTION2   DFHMDF POS=(09,49),LENGTH=01,ATTRB=(UNPROT,NORM,IC,FSET),    CCA-Realia CICS Ver:6.0.27  sw00s.bms                                                                     07NOV23 19:24:59 PAGE  2
+
+   59                INITIAL=' '
+   60 TICKET2   DFHMDF POS=(11,49),LENGTH=06,ATTRB=(UNPROT,NORM,IC,FSET),    C
+   61                INITIAL=' '
+   62          DFHMDF POS=(09,51),LENGTH=01,ATTRB=(ASKIP,NORM)
+   63          DFHMDF POS=(11,57),LENGTH=01,ATTRB=(ASKIP,NORM)
+   64 ERRMSG2  DFHMDF POS=(22,01),LENGTH=71,ATTRB=(ASKIP,NORM,IC,FSET)
+   65 DATE2    DFHMDF POS=(01,70),LENGTH=10,ATTRB=(ASKIP,NORM,IC,FSET)
+   66 TIME2    DFHMDF POS=(02,70),LENGTH=08,ATTRB=(ASKIP,NORM,IC,FSET)
+   67          DFHMSD TYPE=FINAL
+      sw00s loaded with 2 MAPS, 35 FIELDS and 316 Bytes of Literals
+
+   68          ENDCA-Realia CICS Ver:6.0.27  sw00s.bms                                                                     07NOV23 19:24:59 PAGE  3
+
+      COBOL COPY file generated
+
+      Mapset generated. Object size is 1,349.
+

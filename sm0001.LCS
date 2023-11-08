@@ -1,0 +1,44 @@
+CA-Realia CACXPREP C:\Users\Lloyd\Desktop\CAWB30\sm0001.COB
+
+
+     1	     IDENTIFICATION DIVISION.
+     2	     PROGRAM-ID. SM0001.
+     3	     ENVIRONMENT DIVISION.
+     4	     CONFIGURATION SECTION.
+     5	     SOURCE-COMPUTER.	 IBM-PC.
+     6	     OBJECT-COMPUTER.	 IBM-PC.
+     7	     DATA DIVISION.
+     8	     WORKING-STORAGE SECTION.
+     9	     01  WS-COMMAREA.
+    10		 05 WS-PROG-STATE  PIC X(21).
+    11		 05 WS-OPTION	   PIC X.
+    12	     LINKAGE SECTION.
+    13	     01  DFHCOMMAREA	    PIC X(22).
+    14	     PROCEDURE DIVISION 					      REALCICS
+    15	     100-PROCESS.
+    16		 EXEC CICS IGNORE CONDITION
+    17			   ERROR
+    18		 END-EXEC
+    19           MOVE 'SM0001 WAS IN CONTROL' TO WS-PROG-STATE.
+    20	     100-EXIT.
+    21		 EXIT.
+CA-Realia CACXPREP C:\Users\Lloyd\Desktop\CAWB30\sm0001.COB
+
+
+		Options Summary
+
+		      CICS 4.1
+		      LANGLVL(2)
+		      SPACE(1)
+		      FLAG(I)
+		      SOURCE
+		    NOVBREF
+		      OPTIONS
+		      EBCDIC
+		    DIALECT-OSVS
+		      PPCODE
+		      DCHK
+
+		Source Lines Translated:      25
+		Translation Time:	     .02 sec
+		Translation Speed:	   83333 lines per min

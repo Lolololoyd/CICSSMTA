@@ -1,0 +1,68 @@
+         PRINT NOGEN
+SW00S   DFHMSD TYPE=&SYSPARM,MODE=INOUT,LANG=COBOL,STORAGE=AUTO,       C
+               CTRL=(FREEKB,FRSET),TIOAPFX=YES,EXTATT=NO,              C
+               MAPATTS=(COLOR,HILIGHT)
+SW00M    DFHMDI SIZE=(35,80)
+         DFHMDF POS=(01,01),LENGTH=06,ATTRB=(ASKIP,NORM),              C
+               INITIAL='SM00'
+         DFHMDF POS=(01,32),LENGTH=18,ATTRB=(ASKIP,NORM),              C
+               INITIAL='SERVICE MANAGEMENT'
+         DFHMDF POS=(02,37),LENGTH=09,ATTRB=(ASKIP,NORM),              C
+               INITIAL='MAIN MENU'
+         DFHMDF POS=(05,33),LENGTH=17,ATTRB=(ASKIP,NORM),              C
+               INITIAL='1 - SEARCH TICKET'
+         DFHMDF POS=(07,33),LENGTH=17,ATTRB=(ASKIP,NORM),              C
+               INITIAL='2 - SUBMIT TICKET'
+         DFHMDF POS=(09,33),LENGTH=17,ATTRB=(ASKIP,NORM),              C
+               INITIAL='3 - UPDATE TICKET'
+         DFHMDF POS=(11,33),LENGTH=16,ATTRB=(ASKIP,NORM),              C
+               INITIAL='4 - CLOSE TICKET'
+         DFHMDF POS=(13,33),LENGTH=18,ATTRB=(ASKIP,NORM),              C
+               INITIAL='5 - APPROVE TICKET'     
+         DFHMDF POS=(15,33),LENGTH=17,ATTRB=(ASKIP,NORM),              C
+               INITIAL='6 - CANCEL TICKET'    
+         DFHMDF POS=(17,33),LENGTH=20,ATTRB=(ASKIP,NORM),              C
+               INITIAL='7 - USER MAINTENANCE'                                        
+         DFHMDF POS=(19,33),LENGTH=15,ATTRB=(ASKIP,NORM),              C
+               INITIAL='ENTER OPTION : '
+         DFHMDF POS=(20,33),LENGTH=15,ATTRB=(ASKIP,NORM),              C
+               INITIAL='ENTER TICKET : '               
+         DFHMDF POS=(23,13),LENGTH=10,ATTRB=(ASKIP,NORM),              C
+               INITIAL='PF3 - EXIT'
+OPTION   DFHMDF POS=(19,49),LENGTH=01,ATTRB=(UNPROT,NORM,IC,FSET),     C
+               INITIAL=' '
+TICKET   DFHMDF POS=(20,49),LENGTH=06,ATTRB=(UNPROT,NORM,IC,FSET),     C
+               INITIAL=' '               
+         DFHMDF POS=(19,51),LENGTH=01,ATTRB=(ASKIP,NORM)    
+         DFHMDF POS=(20,57),LENGTH=01,ATTRB=(ASKIP,NORM) 
+ERRMSG   DFHMDF POS=(22,01),LENGTH=71,ATTRB=(ASKIP,NORM,IC,FSET)      
+DATE     DFHMDF POS=(01,70),LENGTH=10,ATTRB=(ASKIP,NORM,IC,FSET)
+TIME     DFHMDF POS=(02,70),LENGTH=08,ATTRB=(ASKIP,NORM,IC,FSET)      
+SW00L    DFHMDI SIZE=(35,80)
+         DFHMDF POS=(01,01),LENGTH=06,ATTRB=(ASKIP,NORM),              C
+               INITIAL='SM00'
+         DFHMDF POS=(01,32),LENGTH=18,ATTRB=(ASKIP,NORM),              C
+               INITIAL='SERVICE MANAGEMENT'
+         DFHMDF POS=(02,37),LENGTH=09,ATTRB=(ASKIP,NORM),              C
+               INITIAL='MAIN MENU'
+         DFHMDF POS=(05,33),LENGTH=17,ATTRB=(ASKIP,NORM),              C
+               INITIAL='1 - SEARCH TICKET'
+         DFHMDF POS=(07,33),LENGTH=17,ATTRB=(ASKIP,NORM),              C
+               INITIAL='2 - UPDATE TICKET'                                
+         DFHMDF POS=(09,33),LENGTH=15,ATTRB=(ASKIP,NORM),              C
+               INITIAL='ENTER OPTION : '
+         DFHMDF POS=(11,33),LENGTH=15,ATTRB=(ASKIP,NORM),              C
+               INITIAL='ENTER TICKET : '               
+         DFHMDF POS=(15,13),LENGTH=10,ATTRB=(ASKIP,NORM),              C
+               INITIAL='PF3 - EXIT'
+OPTION2   DFHMDF POS=(09,49),LENGTH=01,ATTRB=(UNPROT,NORM,IC,FSET),    C
+               INITIAL=' '
+TICKET2   DFHMDF POS=(11,49),LENGTH=06,ATTRB=(UNPROT,NORM,IC,FSET),    C
+               INITIAL=' '               
+         DFHMDF POS=(09,51),LENGTH=01,ATTRB=(ASKIP,NORM)    
+         DFHMDF POS=(11,57),LENGTH=01,ATTRB=(ASKIP,NORM) 
+ERRMSG2  DFHMDF POS=(22,01),LENGTH=71,ATTRB=(ASKIP,NORM,IC,FSET)      
+DATE2    DFHMDF POS=(01,70),LENGTH=10,ATTRB=(ASKIP,NORM,IC,FSET)
+TIME2    DFHMDF POS=(02,70),LENGTH=08,ATTRB=(ASKIP,NORM,IC,FSET)       
+         DFHMSD TYPE=FINAL
+         END              
